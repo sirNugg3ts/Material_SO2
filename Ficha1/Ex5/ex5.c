@@ -20,7 +20,7 @@ int _tmain(int argc, LPTSTR argv[]) {
 
 	a = GetModuleFileName(NULL, nome, MAX);
 	DWORD error = GetLastError();
-	_tprintf(TEXT("[%d] - O meu file é: %s"), a, nome);
+	_tprintf(TEXT("[%d] - O meu file Ã©: %s"), a, nome);
 
 	//alinea b)
 	
@@ -37,7 +37,7 @@ int _tmain(int argc, LPTSTR argv[]) {
 		if (_tcscmp(TEXT("#fim"), novoFicheiro)) {
 			fflush(stdin);
 			TCHAR parametro[MAX];
-			_tprintf(TEXT("Introduzir parâmetros:"));
+			_tprintf(TEXT("Introduzir parï¿½metros:"));
 			_fgetts(parametro, MAX, stdin);
 			parametro[_tcslen(parametro)-1] = '\0';
 			_tcscat_s(novoFicheiro, MAX, TEXT(" "));
